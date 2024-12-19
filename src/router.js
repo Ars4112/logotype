@@ -5,12 +5,12 @@ import Modal from "./components/Modal";
 
 export const router = createBrowserRouter([
 	{
-		path: "/",
+		path: "/*",
 		element: <App />,
 		errorElement: <Error404 />,
 		children: [
 			{
-				path: "/post/:id",
+				path: "*/post/:id",
 				element: <Modal />,
 			},
 		],
